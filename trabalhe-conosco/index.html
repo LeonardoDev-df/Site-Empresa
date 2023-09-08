@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Trabalhe Conosco | UTB - União Transporte Brasília</title>
+	<meta name="description" content="Empresa de transporte de passageiros com sede em Brasília. Trabalhamos com linhas urbanas e rodoviárias, fretamentos, encomendas e busdoor." />
+	<meta name="keywords" content="utb, união transporte brasília, ônibus, linhas, horários, busdoor" />
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+	<link href="/favicon.ico" rel="shortcut icon" type="image/ico" />
+	<link rel="stylesheet" href="/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/css/fontawesome-all.min.css">
+	<link rel="stylesheet" href="/css/custom.css">
+</head>
+<body>
+
+	<nav class="navbar navbar-light navbar-expand-sm">
+		<div class="container">
+			<div style="display:flex;align-items:center">
+				<a class="navbar-brand" href="/">
+					<img class="d-none d-lg-block" src="/img/logo.png" alt="UTB">
+					<img class="d-lg-none" src="/img/logo-sm.png" alt="UTB">
+				</a>
+
+				<div>
+					
+					<a href="https://www.instagram.com/utbtransportes/" target="_blank" style="margin-left:10px;font-size:18px;color:rgb(224, 53, 102)"><i class="fab fa-instagram"></i></a>
+
+					<a href="https://api.whatsapp.com/send?phone=5561982370017&text=UTB" target="_blank" style="font-size:18px;color:#28c147"><i class="fab fa-whatsapp" style="margin-left:10px"></i></a>
+				</div>
+			</div>
+
+			<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#togglerNav" aria-controls="togglerNav" aria-expanded="false" aria-label="Menu"><span class="navbar-toggler-icon"></span></button>
+			<div class="collapse navbar-collapse" id="togglerNav">
+				<div class="navbar-nav ml-auto">
+					<div class="dropdown">
+						<a class="nav-item nav-link dropdown-toggle" data-toggle="dropdown" id="empresaDropdown" aria-haspopup="true" aria-expanded="false" href="#">Empresa</a>
+						<div class="dropdown-menu" aria-labelledby="empresaDropdown">
+							<a class="dropdown-item" href="/empresa">Sobre a empresa</a>
+							<a class="dropdown-item" href="/trabalhe-conosco/inserir-curriculo">Trabalhe conosco</a>
+							<a class="dropdown-item" href="/noticias">Notícias</a>
+							<a class="dropdown-item" href="/informacoes">Informações</a>
+						</div>
+					</div>
+
+					<div class="dropdown">
+						<a class="nav-item nav-link dropdown-toggle" data-toggle="dropdown" id="servicosDropdown" aria-haspopup="true" aria-expanded="false" href="#">Serviços</a>
+						<div class="dropdown-menu" aria-labelledby="servicosDropdown">
+							<a class="dropdown-item" href="/horarios">Horários</a>
+							<a class="dropdown-item" href="/tarifas">Tarifas Semiurbano</a>
+							<a class="dropdown-item" href="/tarifas-rodoviario">Tarifas Rodoviário</a>
+							<a class="dropdown-item" href="/busdoor">Busdoor</a>
+							<a class="dropdown-item" href="/encomendas">Encomendas</a>
+						</div>
+					</div>
+
+					<div class="dropdown">
+						<a class="nav-item nav-link dropdown-toggle" data-toggle="dropdown" id="servicosDropdown" aria-haspopup="true" aria-expanded="false" href="#">Aquisição</a>
+						<div class="dropdown-menu" aria-labelledby="servicosDropdown">
+							<a class="dropdown-item" href="/vale-transporte">Vale Transporte</a>
+							<a class="dropdown-item" href="/cartao-expresso">Cartão Expresso</a>
+							<a class="dropdown-item" href="/cartao-vale-transporte">Cartão Vale Transporte</a>
+						</div>
+					</div>
+
+					<a class="nav-item nav-link" href="/contato">Contato</a>
+				</div><!-- navbar -->
+			</div><!-- collapse -->
+		</div><!-- container -->
+	</nav>
+
+	<style>
+.foto-bloco{
+	width:280px;
+	text-align:center;
+	margin-bottom:15px;
+}
+.foto{
+	background-color:#eee;
+	margin-bottom:10px;
+	width:280px;
+	height:280px;
+	overflow:hidden;
+}
+.foto i{
+	color:#999;
+	font-size:150px;
+	padding:30px;
+	margin:0 auto;
+}
+.foto img{
+	max-height:280px;
+	max-width:280px;
+	margin:0 auto;
+}
+.foto-mensagem{
+	color:#6c757d;
+	height:1rem;
+	width:280px;
+}
+#empregos .card-header{
+	padding: 0.50rem 1rem;
+}
+</style>
+
+<div class="page-header">
+	<div class="container">
+		<h1>Trabalhe Conosco</h1>
+		<img class="d-none d-md-block" src="/img/trabalhe-conosco.png" alt="Trabalhe Conosco">
+	</div>
+</div>
+
+<div class="container conteudo">
+
+		<ul class="nav nav-pills submenu">
+		<li class="nav-item">
+			<a class="nav-link active" href="/trabalhe-conosco/inserir-curriculo">Inserir Currículo</a>
+		</li>
+		<!--<li class="nav-item">
+			<a class="nav-link" href="/trabalhe-conosco/editar-curriculo">Editar Currículo</a>
+		</li>-->
+		<li class="nav-item">
+			<a class="nav-link" href="./vagas-disponiveis.html">Vagas Disponíveis</a>
+		</li>
+	</ul>
+	<div class="row">
+		<div class="col-sm-12 col-md-5 col-lg-4">
+			<div class="foto-bloco">
+				<div class="foto d-flex flex-wrap align-content-center align-items-center">
+					<i class="fas fa-user"></i>
+					<div class="foto-mensagem"></div>
+				</div>
+				
+				<label class="btn btn-success btn-sm btn-file mb-0">
+					<span class="upload-text">Incluir</span><input type="file" class="d-none" id="file">
+				</label>
+				<button type="button" class="btn btn-danger btn-sm" id="remover-foto">Remover</button>
+			</div>
+		</div>
+		<div class="col-sm-12 col-md-7 col-lg-8">
+			<div class="form-group">
+				<label for="nome">Nome Completo <span class="text-danger">*</span></label>
+				<input type="text" class="form-control" id="nome" maxlength="50">
+			</div>
+			<div class="form-group">
+				<label for="cargo">Cargo <span class="text-danger">*</span></label>
+				<select class="form-control" id="cargo">
+					<option value=""></option>
+										<option value="4">ABASTECEDOR</option>
+										<option value="61">ALMOXARIFE</option>
+										<option value="63">APRENDIZ</option>
+										<option value="64">APRENDIZ DE COBRADOR</option>
+										<option value="6">ARRECADADOR</option>
+										<option value="60">AUXILIAR ADMINISTRATIVO</option>
+										<option value="68">AUXILIAR ADMINISTRATIVO DE VENDAS</option>
+										<option value="77">AUXILIAR DE ALMOXARIFE</option>
+										<option value="72">AUXILIAR DE MANUTENÇÃO</option>
+										<option value="12">AUXILIAR DE MECÂNICO</option>
+										<option value="62">AUXILIAR DE MONITORAMENTO</option>
+										<option value="16">AUXILIAR DE RH</option>
+										<option value="28">AUXILIAR DE SERVIÇOS GERAIS</option>
+										<option value="14">AUXILIAR DE TRÁFEGO</option>
+										<option value="69">BILHETEIRO</option>
+										<option value="18">BORRACHEIRO</option>
+										<option value="2">COBRADOR</option>
+										<option value="76">COBRADOR RODOVIÁRIO</option>
+										<option value="75">COBRADOR URBANO</option>
+										<option value="71">ENCARREGADO DE LIMPEZA</option>
+										<option value="55">ESTAGIARIO</option>
+										<option value="29">FISCAL</option>
+										<option value="67">LANTERNEIRO</option>
+										<option value="35">MANOBRISTA</option>
+										<option value="34">MECANICO</option>
+										<option value="1">MOTORISTA</option>
+										<option value="78">MOTORISTA INSTRUTOR</option>
+										<option value="74">MOTORISTA RODOVIÁRIO</option>
+										<option value="73">MOTORISTA URBANO</option>
+										<option value="65">PSICÓLOGO</option>
+										<option value="51">RECEPCIONISTA</option>
+										<option value="70">TÉCNICO DE SEGURANÇA DO TRABALHO</option>
+										<option value="46">VIGIA</option>
+										<option value="66">VISTORIADOR</option>
+									</select>
+			</div>
+			<div class="form-group">
+				<label for="local">Local de Trabalho <span class="text-danger">*</span></label>
+				<select class="form-control" id="local">
+					<option value=""></option>
+										<option value="4">ÁGUAS LINDAS/GO</option>
+										<option value="7">ALTO HORIZONTE/GO</option>
+										<option value="1">BRASÍLIA/DF</option>
+										<option value="3">CIDADE OCIDENTAL/GO</option>
+										<option value="8">MONTE ALTO/GO</option>
+										<option value="6">NIQUELÂNDIA/GO</option>
+										<option value="5">PADRE BERNARDO/GO</option>
+										<option value="2">VALPARAÍSO/GO</option>
+									</select>
+			</div>
+			<div class="form-group">
+				<label for="pretensao">Pretensão Salarial</label>
+				<input type="text" class="form-control" id="pretensao">
+			</div>
+		</div>
+	</div>
+
+	<h2>DADOS PESSOAIS</h2>
+
+	<div class="row">
+		<div class="form-group col-md-4">
+			<label for="sexo">Sexo <span class="text-danger">*</span></label>
+			<select class="form-control" id="sexo">
+				<option value=""></option>
+				<option value="M">MASCULINO</option>
+				<option value="F">FEMININO</option>
+			</select>
+		</div>
+		<div class="form-group col-md-4">
+			<label for="estadoCivil">Estado Civil <span class="text-danger">*</span></label>
+			<select class="form-control" id="estadoCivil">
+				<option value=""></option>
+								<option value="1">SOLTEIRO (A)</option>
+								<option value="2">CASADO (A)</option>
+								<option value="3">DIVORCIADO (A)</option>
+								<option value="4">VIUVO (A)</option>
+								<option value="5">UNIAO ESTAVEL</option>
+								<option value="6">OUTROS</option>
+							</select>
+		</div>
+		<div class="form-group col-md-4">
+			<label for="escolaridade">Escolaridade <span class="text-danger">*</span></label>
+			<select class="form-control" id="escolaridade">
+				<option value=""></option>
+								<option value="1">ANALFABETO</option>
+								<option value="2">ATE O 5 ANO INCOMPLETO</option>
+								<option value="3">ENSINO PRIMARIO COMPLETO</option>
+								<option value="4">ENSINO FUNDAMENTAL INCOMPLETO</option>
+								<option value="5">ENSINO FUNDAMENTAL COMPLETO</option>
+								<option value="6">ENSINO MEDIO INCOMPLETO</option>
+								<option value="7">ENSINO MEDIO COMPLETO</option>
+								<option value="8">SUPERIOR INCOMPLETO</option>
+								<option value="9">SUPERIOR COMPLETO</option>
+								<option value="10">POS GRADUACAO COMPLETA</option>
+								<option value="11">MESTRADO COMPLETO</option>
+								<option value="12">DOUTORADO COMPLETO</option>
+							</select>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="form-group col-md-4">
+			<label for="deficiencia">Possui alguma deficiência? <span class="text-danger">*</span></label>
+			<select class="form-control" id="deficiencia">
+				<option value=""></option>
+				<option value="N">NÃO</option>
+				<option value="S">SIM</option>
+			</select>
+		</div>
+		<div class="form-group col-md-4">
+			<label for="cpf">CPF <span class="text-danger">*</span></label>
+			<input type="text" class="form-control cpf" id="cpf">
+		</div>
+		<div class="form-group col-md-4">
+			<label for="dataNascimento">Data Nascimento <span class="text-danger">*</span></label>
+			<input type="text" class="form-control data" id="dataNascimento">
+		</div>
+	</div>
+	<div class="row">
+		<div class="form-group col-md-4">
+			<label for="email">E-mail <span class="text-danger">*</span></label>
+			<input type="text" class="form-control" id="email" maxlength="50">
+		</div>
+		<div class="form-group col-md-4">
+			<label for="telefone">Telefone <span class="text-danger">*</span></label>
+			<input type="text" class="form-control telefone" id="telefone">
+		</div>
+	</div>
+
+	<h2>ENDEREÇO</h2>
+
+	<div class="row">
+		<div class="form-group col-md-4">
+			<label for="cep">CEP</label>
+			<input type="text" class="form-control cep" id="cep">
+		</div>
+		<div class="form-group col-md-8">
+			<label for="endereco">Endereço</label>
+			<input type="text" class="form-control" id="endereco" maxlength="100">
+		</div>
+	</div>
+	<div class="row">
+		<div class="form-group col-md-4">
+			<label for="bairro">Bairro</label>
+			<input type="text" class="form-control" id="bairro" maxlength="50">
+		</div>
+		<div class="form-group col-md-4">
+			<label for="cidade">Cidade <span class="text-danger">*</span></label>
+			<input type="text" class="form-control" id="cidade" maxlength="50">
+		</div>
+		<div class="form-group col-md-4">
+			<label for="uf">UF <span class="text-danger">*</span></label>
+			<select class="form-control" id="uf">
+				<option value=""></option>
+				<option value="AC">AC</option>
+				<option value="AL">AL</option>
+				<option value="AM">AM</option>
+				<option value="AP">AP</option>
+				<option value="BA">BA</option>
+				<option value="CE">CE</option>
+				<option value="DF">DF</option>
+				<option value="ES">ES</option>
+				<option value="GO">GO</option>
+				<option value="MA">MA</option>
+				<option value="MG">MG</option>
+				<option value="MS">MS</option>
+				<option value="MT">MT</option>
+				<option value="PA">PA</option>
+				<option value="PB">PB</option>
+				<option value="PE">PE</option>
+				<option value="PI">PI</option>
+				<option value="PR">PR</option>
+				<option value="RJ">RJ</option>
+				<option value="RN">RN</option>
+				<option value="RO">RO</option>
+				<option value="RR">RR</option>
+				<option value="RS">RS</option>
+				<option value="SC">SC</option>
+				<option value="SE">SE</option>
+				<option value="SP">SP</option>
+				<option value="TO">TO</option>
+			</select>
+		</div>
+	</div>
+
+	<h2>ÚLTIMOS EMPREGOS</h2>
+
+	<div class="row">
+		<div class="form-group col-md-4">
+			<label for="dataEntrada">Data de Entrada</label>
+			<input type="text" class="form-control data" id="dataEntrada">
+		</div>
+		<div class="form-group col-md-4">
+			<label for="dataSaida">Data de Saída</label>
+			<input type="text" class="form-control data" id="dataSaida">
+		</div>
+		<div class="form-group col-md-4">
+			<label for="empresa">Empresa</label>
+			<input type="text" class="form-control" id="empresa">
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="descricao">Descrição (cargo e atividades desempenhadas)</label>
+		<textarea class="form-control" id="descricao" rows="3"></textarea>
+	</div>
+	<button type="button" class="btn btn-success btn-sm" id="adicionar-emprego">Adicionar Emprego</button>
+	<span class="text-danger small ml-2" id="erro-emprego"></span>
+	<div id="empregos"></div>
+
+	<div class="form-group mt-3">
+		<label for="experiencia">Relate sua experiência profissional</label>
+		<textarea class="form-control" id="experiencia" rows="3" maxlength="10000"></textarea>
+	</div>
+
+	<div class="alert alert-danger" role="alert" id="erro-curriculo" style="display:none"></div>
+
+	<button type="button" class="btn btn-custom" id="gravar-curriculo">Gravar Currículo</button>
+	<span class="text-muted small ml-2"><span class="text-danger">*</span> Campos obrigatórios.</span>
+</div>
+
+<script>
+function run(){
+
+	var filename = '';
+	var empregos = [];
+
+	$('#pretensao').number(true, 2, ',', '.');
+
+	// Máscaras
+	$(".telefone").mask("(99) 9999-9999?9").focus(function() {
+		$(this).keyup(function() {
+		numeros = $(this).val().replace(/\D/g, '');
+		if(numeros.length == 11) { $(this).mask("(99) 99999-9999"); }
+		if(numeros.length == 10) { $(this).mask("(99) 9999-9999?9"); }
+		});
+	});
+
+	$('.data').mask('99/99/9999');
+	$('.cpf').mask('999.999.999-99');
+	$('.cep').mask('99999-999');
+
+	// Incluir foto
+	$(document).on('change', '#file', function(event){
+		var files = event.target.files;
+		if(!files[0]) return;
+		var file = files[0];
+
+		var ext = file.name.split('.').pop().toLowerCase();
+		if(jQuery.inArray(ext, ['png','jpg','jpeg']) == -1){
+			$('.foto').html('<i class="fas fa-user"></i><div class="foto-mensagem text-danger">Tipo de arquivo não permitido</div>');
+			return;
+		}
+
+		if (file.size > 1048576*2) {
+			$('.foto').html('<i class="fas fa-user"></i><div class="foto-mensagem text-danger">O arquivo deve ter menos que 2 MB</div>');
+			return;
+		}
+
+		var formData = new FormData();
+		formData.append('file', file, file.name);
+
+		$.ajax({
+			url:"incluir-foto",
+			method:"POST",
+			data: formData,
+			contentType: false,
+			cache: false,
+			processData: false,
+			beforeSend:function(){
+				$('.foto').html('<i class="fas fa-user"></i><div class="foto-mensagem">Carregando imagem...</div>');
+			},
+			success:function(data){
+				filename = data.filename;
+				$('.foto').html('<img src="/temp/'+filename+'" alt="Foto" />');
+			},
+			error:function(data){
+				console.log(data);
+			}
+		});
+	});
+
+	// Remover foto
+	$(document).on('click', '#remover-foto', function(){
+		if(filename=='') return;
+
+		$.ajax({
+			type:'delete', data:{filename:filename}, url:'remover-foto', dataType:'json',
+			success: function(j){
+				if(j.status=='OK'){
+					filename = '';
+					$('#file').val('');
+					$('.foto').html('<i class="fas fa-user"></i><div class="foto-mensagem"></div>');
+				}
+			}
+		});
+	});
+
+	// Adicionar emprego
+	$(document).on('click', '#adicionar-emprego', function(){
+		var emprego = {
+			empresa:$('#empresa').val(),
+			dataEntrada:$('#dataEntrada').val(),
+			dataSaida:$('#dataSaida').val(),
+			descricao:$('#descricao').val()
+		};
+
+		if(emprego.empresa=='' || emprego.dataEntrada=='' || emprego.dataSaida=='' || emprego.descricao==''){
+			$('#erro-emprego').text('* Preencha todos os campos.').fadeIn().delay(3000).fadeOut();
+			return;
+		}
+
+		empregos.push(emprego);
+		var empregoId = empregos.indexOf(emprego);
+
+		$('#empregos').append('<div class="card mt-3" id="'+empregoId+'"><div class="card-header"><div class="row"><div class="col-md-6"><span class="align-middle"><strong>'+emprego.empresa+'</strong> '+emprego.dataEntrada+' - '+emprego.dataSaida+'</span></div><div class="col-md-6 text-md-right"><button type="button" class="btn btn-secondary btn-sm" id="excluir-emprego" title="Excluir">Excluir</button></div></div></div><div class="card-body"><p class="card-text">'+emprego.descricao+'</p></div></div>');
+
+		$('#dataEntrada, #dataSaida, #empresa, #descricao').val('');
+	});
+
+	// Excluir emprego
+	$(document).on('click', '#excluir-emprego', function(){
+		var id = $(this).closest('.card').attr('id');
+		$('.card#'+id).remove();
+		empregos.splice(id, 1);
+	});
+
+	// Gravar currículo
+	$(document).on('click', '#gravar-curriculo', function(){
+		var curriculo = {
+			nome:$('#nome').val(),
+			cargo:$('#cargo').val(),
+			local:$('#local').val(),
+			pretensao:$('#pretensao').val(),
+			sexo:$('#sexo').val(),
+			estadoCivil:$('#estadoCivil').val(),
+			escolaridade:$('#escolaridade').val(),
+			cpf:$('#cpf').val(),
+			rg:$('#rg').val(),
+			dataNascimento:$('#dataNascimento').val(),
+			email:$('#email').val(),
+			telefone:$('#telefone').val(),
+			deficiencia:$('#deficiencia').val(),
+			cep:$('#cep').val(),
+			endereco:$('#endereco').val(),
+			bairro:$('#bairro').val(),
+			cidade:$('#cidade').val(),
+			uf:$('#uf').val(),
+			experiencia:$('#experiencia').val(),
+			filename:filename,
+			baseurl:'https://www.utb.com.br/temp/',
+			empregos:empregos
+		};
+
+		$.ajax({
+			type:'post', data:curriculo, url:'curriculo', dataType:'json',
+			beforeSend:function(){
+				$('#gravar-curriculo').attr('disabled', true);
+			},
+			success:function(j){
+				if(j.status=='OK'){
+					window.location = "";
+				}else{
+					$('#erro-curriculo').text(j.status);
+					$('#erro-curriculo').show();
+				}
+			},
+			error:function(j){
+				$('#erro-curriculo').text('Erro no banco de dados.');
+				$('#erro-curriculo').show();
+			},
+			complete:function(){
+				$('#gravar-curriculo').attr('disabled', false);
+			}
+		});
+	});
+}
+</script>
+	<footer>
+		<div class="container tesss">
+			<div class="row">
+				<div class="col-sm-6 col-md-3 d-none d-lg-block">
+					<h5 class="text-light">EMPRESA</h5>
+					<ul class="list-unstyled">
+						<li><a href="/empresa" class="text-footer">Sobre a empresa</a></li>
+						<li><a href="/trabalhe-conosco/inserir-curriculo" class="text-footer">Trabalhe conosco</a></li>
+						<li><a href="/noticias" class="text-footer">Notícias</a></li>
+						<li><a href="/informacoes" class="text-footer">Informações</a></li>
+					</ul>
+				</div>
+				<div class="col-sm-6 col-md-3 d-none d-lg-block">
+					<h5 class="text-light">SERVIÇOS</h5>
+					<ul class="list-unstyled">
+						<li><a href="/horarios" class="text-footer">Horários</a></li>
+						<li><a href="/tarifas" class="text-footer">Tarifas Semiurbano</a></li>
+						<li><a href="/tarifas-rodoviario" class="text-footer">Tarifas Rodoviário</a></li>
+						<li><a href="/busdoor" class="text-footer">Busdoor</a></li>
+						<li><a href="/encomendas" class="text-footer">Encomendas</a></li>
+					</ul>
+				</div>
+				<div class="col-sm-6 col-md-3 d-none d-lg-block">
+					<h5 class="text-light">AQUISIÇÃO</h5>
+					<ul class="list-unstyled">
+						<li><a href="/vale-transporte" class="text-footer">Vale Transporte</a></li>
+						<li><a href="/cartao-expresso" class="text-footer">Cartão Expresso</a></li>
+						<li><a href="/cartao-vale-transporte" class="text-footer">Cartão Vale Transporte</a></li>
+					</ul>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<h5 class="text-light">INTERNO</h5>
+					<ul class="list-unstyled">
+						<li><a href="http://webmail.utb.com.br" target="_blank" class="text-footer">Webmail</a></li>
+						<li><a href="https://intranet.utb.com.br" target="_blank" class="text-footer">Intranet</a></li>
+					</ul>
+				</div>
+
+				<div class="desenvolvimento d-none d-lg-block">
+					<a href="https://www.busdata.com.br" target="_blank">
+						<img src="/img/busdata.png" alt="Desenvolvido por Busdata">
+						<p>Busdata Sistemas</p>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer-bottom">
+			<div class="container">
+				© 2018 UTB - Sede Brasília: SIA Trecho 06 lote 160, Guará, Brasília-DF - Cep: 71205-060 | Tel: (61) 3233-2505 | SAC: 0800 647 0825 | Deficientes Auditivos: 0800 006 8006
+			</div>
+		</div>
+	</footer>
+
+<script src="/js/jquery.min.js"></script>
+<script src="/js/popper.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/sweetalert.min.js"></script>
+<script src="/js/jquery.maskedinput.min.js"></script><script src="/js/jquery.number.min.js"></script><script>
+$(document).ready(function(){
+	if (typeof run === "function") run();
+
+	});
+</script>
+</body>
+</html>

@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Vale Transporte | UTB - União Transporte Brasília</title>
+	<meta name="description" content="Empresa de transporte de passageiros com sede em Brasília. Trabalhamos com linhas urbanas e rodoviárias, fretamentos, encomendas e busdoor." />
+	<meta name="keywords" content="utb, união transporte brasília, ônibus, linhas, horários, busdoor" />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<link href="/favicon.ico" rel="shortcut icon" type="image/ico" />
+	<link rel="stylesheet" href="/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/css/fontawesome-all.min.css">
+	<link rel="stylesheet" href="/css/custom.css">
+</head>
+<body>
+
+	<nav class="navbar navbar-light navbar-expand-sm">
+		<div class="container">
+			<div style="display:flex;align-items:center">
+				<a class="navbar-brand" href="/">
+					<img class="d-none d-lg-block" src="/img/logo.png" alt="UTB">
+					<img class="d-lg-none" src="/img/logo-sm.png" alt="UTB">
+				</a>
+
+				<div>
+					
+					<a href="https://www.instagram.com/utbtransportes/" target="_blank" style="margin-left:10px;font-size:18px;color:rgb(224, 53, 102)"><i class="fab fa-instagram"></i></a>
+
+					<a href="https://api.whatsapp.com/send?phone=5561982370017&text=UTB" target="_blank" style="font-size:18px;color:#28c147"><i class="fab fa-whatsapp" style="margin-left:10px"></i></a>
+				</div>
+			</div>
+
+			<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#togglerNav" aria-controls="togglerNav" aria-expanded="false" aria-label="Menu"><span class="navbar-toggler-icon"></span></button>
+			<div class="collapse navbar-collapse" id="togglerNav">
+				<div class="navbar-nav ml-auto">
+					<div class="dropdown">
+						<a class="nav-item nav-link dropdown-toggle" data-toggle="dropdown" id="empresaDropdown" aria-haspopup="true" aria-expanded="false" href="#">Empresa</a>
+						<div class="dropdown-menu" aria-labelledby="empresaDropdown">
+							<a class="dropdown-item" href="/empresa">Sobre a empresa</a>
+							<a class="dropdown-item" href="/trabalhe-conosco/inserir-curriculo">Trabalhe conosco</a>
+							<a class="dropdown-item" href="/noticias">Notícias</a>
+							<a class="dropdown-item" href="/informacoes">Informações</a>
+						</div>
+					</div>
+
+					<div class="dropdown">
+						<a class="nav-item nav-link dropdown-toggle" data-toggle="dropdown" id="servicosDropdown" aria-haspopup="true" aria-expanded="false" href="#">Serviços</a>
+						<div class="dropdown-menu" aria-labelledby="servicosDropdown">
+							<a class="dropdown-item" href="/horarios">Horários</a>
+							<a class="dropdown-item" href="/tarifas">Tarifas Semiurbano</a>
+							<a class="dropdown-item" href="/tarifas-rodoviario">Tarifas Rodoviário</a>
+							<a class="dropdown-item" href="/busdoor">Busdoor</a>
+							<a class="dropdown-item" href="/encomendas">Encomendas</a>
+						</div>
+					</div>
+
+					<div class="dropdown">
+						<a class="nav-item nav-link dropdown-toggle" data-toggle="dropdown" id="servicosDropdown" aria-haspopup="true" aria-expanded="false" href="#">Aquisição</a>
+						<div class="dropdown-menu" aria-labelledby="servicosDropdown">
+							<a class="dropdown-item" href="/vale-transporte">Vale Transporte</a>
+							<a class="dropdown-item" href="/cartao-expresso">Cartão Expresso</a>
+							<a class="dropdown-item" href="/cartao-vale-transporte">Cartão Vale Transporte</a>
+						</div>
+					</div>
+
+					<a class="nav-item nav-link" href="/contato">Contato</a>
+				</div><!-- navbar -->
+			</div><!-- collapse -->
+		</div><!-- container -->
+	</nav>
+
+	<style>
+.conteudo ul{-webkit-padding-start: 20px}
+.login-block{background-color:#f5f5f5;padding:20px}
+.login-block h2{margin-top:0;margin-bottom:20px}
+@media (min-width: 576px) {
+	.modal-open .modal {
+		margin-top:10%;
+	}
+}
+</style>
+
+<div class="page-header">
+	<div class="container">
+		<h1>Vale Transporte</h1>
+	</div>
+</div>
+
+<div class="container conteudo">
+
+	<div class="alert alert-warning alert-dismissible">
+		Adquira gratuitamente o <strong>cartão vale transporte</strong> para o seu funcionário, já estamos atendendo as linhas dos municípios de <strong>Águas Lindas/GO, Monte Alto/GO, Valparaíso/GO, Cidade Ocidental/GO, Novo Gama e Pedregal/GO</strong>.
+
+		As empresas deverão fazer o cadastro no <a href="http://cartaopj.utb.com.br" target="_blank">site de vendas</a>. Após o cadastro, faça o login e confira o passo a passo para o pedido dos cartões.
+		<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		</button>
+	</div>
+
+	<div class="login-block">
+
+				<div class="row">
+			<div class="col-md-6 pr-5 border-right">
+				<h2>Já sou cadastrado</h2>
+				<div class="form-group">
+					<label for="email">E-mail</label>
+					<input type="text" class="form-control" id="email">
+				</div>
+				<div class="form-group">
+					<label for="senha">Senha <a href="#" class="small" tabIndex="-1" data-toggle="modal" data-target="#senhaModal">esqueci minha senha</a></label>
+					<input type="password" class="form-control" id="senha">
+				</div>
+				<div class="alert alert-danger" role="alert" id="erro-login" style="display:none"></div>
+				<button type="button" class="btn btn-custom" id="entrar">Entrar</button>
+			</div>
+			<div class="col-md-6 pl-md-5 mt-5 mt-md-0">
+				<h2>Primeira vez</h2>
+				<p>Clique no botão abaixo para realizar seu primeiro pedido.</p>
+				<a href="/vale-transporte/cadastro" class="btn btn-grey">Fazer Cadastro</a>
+			</div>
+		</div>
+
+			</div>
+
+	<h2>Aquisição de Vale Transporte</h2>
+	<p>O vale transporte é um direito que assegura ao trabalhador gastar no deslocamento para o trabalho,
+conforme determina o Decreto nº 95.247/87</p>
+	<p>Para agilizar e facilitar, a compra de vale transporte deverá ser feita através da internet.</p>
+	<p>Se você é trabalhador, solicite ao seu empregador o seu vale transporte.</p>
+	<p>Se você é empregador, faça o cadastro em nosso sistema e compre o vale transporte.</p>
+	<h2>Como funciona?</h2>
+	<p>
+		1) Faça o cadastro;<br />
+		2) Realize o seu pedido;<br />
+		3) Efetue o pagamento;<br />
+		4) Envie o comprovante de pagamento pelo link informado;<br />
+		5) Você receberá um e-mail com a confirmação do pagamento e a autorização para resgatar os vales transportes; ou poderá solicitar a opção de entrega por Sedex.
+	</p>
+	<h2>Opções de Entrega</h2>
+	<p>
+		Resgate na sede da Empresa: SIA Trecho 06 Lote 160, Guará, Brasília-DF.<br />
+		Atendimento de 8h às 17h de segunda a sexta.
+	</p>
+	<p>
+		SEDEX (até 3 dias úteis)<br />
+		Preço R$ 25,00 para entregas dentro do Distrito Federal<br />
+		Consulte o preço para outras regiões.
+	</p>
+	<h2>Informações</h2>
+	<ul>
+		<li>As compras de vale transporte deverão ser feitas mediante pedido no site da empresa e envio do comprovante de pagamento;</li>
+		<li>Pedidos não pagos terão validade de 10 dias;</li>
+		<li>Forma de pagamento somente à vista em dinheiro, transferência ou depósito.</li>
+		<li>Os vales transportes têm validade de até dois meses.</li>
+		<li>Quando houver previsão de reajuste, a empresa irá informar com antecedência mínima de 10 dias;</li>
+		<li>Não efetuamos trocas de vale transporte;</li>
+		<li>Após a confirmação do pagamento, o vale transporte estará disponível para entrega imediata.</li>
+		<li>Qualquer outra informação (61) 3968-9301
+</div>
+
+<div class="modal fade" id="senhaModal" tabindex="-1" role="dialog" aria-labelledby="senhaModalLabel" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="senhaModalLabel">Recuperar Senha</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<div class="form-group">
+					<label for="emailRecuperarSenha">Digite o e-mail cadastrado</label>
+					<input type="text" class="form-control" id="emailRecuperarSenha">
+				</div>
+				<div class="alert alert-danger" id="erro-senha" role="alert" style="display:none"></div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+				<button type="button" class="btn btn-custom" id="recuperarSenha">Receber E-mail</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+function run(){
+	$('#senhaModal').on('shown.bs.modal', function(){
+		$('#emailRecuperarSenha').trigger('focus');
+	});
+
+	$('#recuperarSenha').click(function(){
+		var email = $('#emailRecuperarSenha').val();
+
+		$.ajax({
+			type:'post', data:{email:email}, url:'/vale-transporte/recuperar-senha', dataType:'json',
+			success:function(j){
+				console.log(j);
+				if(j.status=='OK'){
+					$('#senhaModal .modal-body').html('<div class="alert alert-success" role="alert">E-mail enviado com sucesso!</div>');
+					$('#recuperarSenha').remove();
+				}else{
+					$('#erro-senha').text(j.status).show();
+				}
+			},
+			error:function(j){
+				console.log(j);
+			},
+			beforeSend:function(){
+				$('#recuperarSenha').text('Carregando...');
+				$('#recuperarSenha').attr('disabled', true);
+			},
+			complete:function(){
+				$('#recuperarSenha').text('Receber E-mail');
+				$('#recuperarSenha').attr('disabled', false);
+			}
+		});
+	});
+
+	$('#emailRecuperarSenha').keydown(function(e){
+		if(e.keyCode == 13) $('#recuperarSenha').click();
+	});
+
+	$('#entrar').click(function(){
+		var data = {
+			email:$('#email').val(),
+			senha:$('#senha').val()
+		};
+
+		$.ajax({
+			type:'post', data:data, url:'/vale-transporte/login', dataType:'json',
+			success: function(j){
+				if(j.status=='OK'){
+					window.location = "/vale-transporte/pedido";
+				}else{
+					$('#erro-login').text(j.status);
+					$('#erro-login').show();
+				}
+			},
+			error: function(j){
+				console.log(j);
+			}
+		});
+	});
+
+	$('.login-block input').keydown(function(e){
+		if(e.keyCode == 13) $('#entrar').click();
+	});
+}
+</script>
+	<footer>
+		<div class="container tesss">
+			<div class="row">
+				<div class="col-sm-6 col-md-3 d-none d-lg-block">
+					<h5 class="text-light">EMPRESA</h5>
+					<ul class="list-unstyled">
+						<li><a href="/empresa" class="text-footer">Sobre a empresa</a></li>
+						<li><a href="/trabalhe-conosco/inserir-curriculo" class="text-footer">Trabalhe conosco</a></li>
+						<li><a href="/noticias" class="text-footer">Notícias</a></li>
+						<li><a href="/informacoes" class="text-footer">Informações</a></li>
+					</ul>
+				</div>
+				<div class="col-sm-6 col-md-3 d-none d-lg-block">
+					<h5 class="text-light">SERVIÇOS</h5>
+					<ul class="list-unstyled">
+						<li><a href="/horarios" class="text-footer">Horários</a></li>
+						<li><a href="/tarifas" class="text-footer">Tarifas Semiurbano</a></li>
+						<li><a href="/tarifas-rodoviario" class="text-footer">Tarifas Rodoviário</a></li>
+						<li><a href="/busdoor" class="text-footer">Busdoor</a></li>
+						<li><a href="/encomendas" class="text-footer">Encomendas</a></li>
+					</ul>
+				</div>
+				<div class="col-sm-6 col-md-3 d-none d-lg-block">
+					<h5 class="text-light">AQUISIÇÃO</h5>
+					<ul class="list-unstyled">
+						<li><a href="/vale-transporte" class="text-footer">Vale Transporte</a></li>
+						<li><a href="/cartao-expresso" class="text-footer">Cartão Expresso</a></li>
+						<li><a href="/cartao-vale-transporte" class="text-footer">Cartão Vale Transporte</a></li>
+					</ul>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<h5 class="text-light">INTERNO</h5>
+					<ul class="list-unstyled">
+						<li><a href="http://webmail.utb.com.br" target="_blank" class="text-footer">Webmail</a></li>
+						<li><a href="https://intranet.utb.com.br" target="_blank" class="text-footer">Intranet</a></li>
+					</ul>
+				</div>
+
+				<div class="desenvolvimento d-none d-lg-block">
+					<a href="https://www.busdata.com.br" target="_blank">
+						<img src="/img/busdata.png" alt="Desenvolvido por Busdata">
+						<p>Busdata Sistemas</p>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer-bottom">
+			<div class="container">
+				© 2018 UTB - Sede Brasília: SIA Trecho 06 lote 160, Guará, Brasília-DF - Cep: 71205-060 | Tel: (61) 3233-2505 | SAC: 0800 647 0825 | Deficientes Auditivos: 0800 006 8006
+			</div>
+		</div>
+	</footer>
+
+<script src="/js/jquery.min.js"></script>
+<script src="/js/popper.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/sweetalert.min.js"></script>
+<script>
+$(document).ready(function(){
+	if (typeof run === "function") run();
+
+	});
+</script>
+</body>
+</html>

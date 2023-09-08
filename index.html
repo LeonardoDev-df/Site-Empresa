@@ -1,0 +1,339 @@
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>UTB - União Transporte Brasília</title>
+    <meta name="description" content="Empresa de transporte de passageiros com sede em Brasília. Trabalhamos com linhas urbanas e rodoviárias, fretamentos, encomendas e busdoor." />
+    <meta name="keywords" content="utb, união transporte brasília, ônibus, linhas, horários, busdoor" />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-Vk4y5Bf3f3I5eZ3TM9bx5W5O5IIv5G6Pp0N5td5B5f5V5i5z5I5F5e5W5O5I5S5G5u5P5o5N5t5B5f5V5i5z5I5F5e5W5O5I5=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link href="/favicon.ico" rel="shortcut icon" type="image/ico" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+  
+    <link rel="stylesheet" href="/css/custom.css">
+</head>
+<body>
+
+	<nav class="navbar navbar-light navbar-expand-sm">
+		<div class="container">
+			<div style="display:flex;align-items:center">
+				<a class="navbar-brand" href="/">
+					<img class="d-none d-lg-block" src="/img/pio.png" alt="UTB">
+					<img class="d-lg-none" src="/img/logo-sm.png" alt="UTB">
+				</a>
+
+				<div>
+                    <a href="https://www.instagram.com" target="_blank" style="margin-left:10px;font-size:18px;color:rgb(224, 53, 102);"><i class="fa fa-instagram"></i></a>
+
+                    <a href="https://api.whatsapp.com" target="_blank" style="font-size:18px;color:#28c147"><i class="fab fa-whatsapp" style="margin-left:10px"></i></a>
+                </div>
+			</div>
+
+			<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#togglerNav" aria-controls="togglerNav" aria-expanded="false" aria-label="Menu"><span class="navbar-toggler-icon"></span></button>
+			<div class="collapse navbar-collapse" id="togglerNav">
+				<div class="navbar-nav ml-auto">
+					<div class="dropdown">
+						<a class="nav-item nav-link dropdown-toggle" data-toggle="dropdown" id="empresaDropdown" aria-haspopup="true" aria-expanded="false" href="#">Empresa</a>
+						<div class="dropdown-menu" aria-labelledby="empresaDropdown">
+							<a class="dropdown-item" href="/empresa">Sobre a empresa</a>
+							<a class="dropdown-item" href="/trabalhe-conosco">Trabalhe conosco</a>
+							<a class="dropdown-item" href="/noticias">Notícias</a>
+							<a class="dropdown-item" href="/informacoes">Informações</a>
+						</div>
+					</div>
+
+					<div class="dropdown">
+						<a class="nav-item nav-link dropdown-toggle" data-toggle="dropdown" id="servicosDropdown" aria-haspopup="true" aria-expanded="false" href="#">Serviços</a>
+						<div class="dropdown-menu" aria-labelledby="servicosDropdown">
+							<a class="dropdown-item" href="/horarios">Horários</a>
+							<a class="dropdown-item" href="/tarifas">Tarifas Semiurbano</a>
+							<a class="dropdown-item" href="/tarifas-rodoviario">Tarifas Rodoviário</a>
+							<a class="dropdown-item" href="/busdoor">Busdoor</a>
+							<a class="dropdown-item" href="/encomendas">Encomendas</a>
+						</div>
+					</div>
+
+					<div class="dropdown">
+						<a class="nav-item nav-link dropdown-toggle" data-toggle="dropdown" id="servicosDropdown" aria-haspopup="true" aria-expanded="false" href="#">Aquisição</a>
+						<div class="dropdown-menu" aria-labelledby="servicosDropdown">
+							<a class="dropdown-item" href="/vale-transporte">Vale Transporte</a>
+							<a class="dropdown-item" href="/cartao-expresso">Cartão Expresso</a>
+							<a class="dropdown-item" href="/cartao-vale-transporte">Cartão Vale Transporte</a>
+						</div>
+					</div>
+
+					<a class="nav-item nav-link" href="/contato/">Contato</a>
+				</div><!-- navbar -->
+			</div><!-- collapse -->
+		</div><!-- container -->
+	</nav>
+
+	<style>
+.media img{background-color:#fff}
+
+.horarios-panel{
+	padding:20px;
+	border-radius:8px;
+	background: rgba(255,255,255,0.5);
+	width:340px;
+	margin-left: 314px;
+	margin-top: -10%;
+}
+.horarios-panel h2{
+	font-size:22px;
+	margin-bottom:15px;
+	color:#444;
+}
+.horarios-container{
+	display:flex;height:100%;align-items:center;
+}
+@media (max-width: 767px) {
+	.horarios-container {
+		justify-content:center;
+	}
+}
+</style>
+
+	<div class="header-image">
+		<div class="container horarios-container">
+
+
+			<div class="horarios-panel">
+				<h2>Consulta de Horários</h2>
+				<div class="form-group">
+					<select class="form-control" id="origem">
+						<option value="">Selecione a origem...</option>
+													<option value="2">ÁGUAS LINDAS/GO</option>
+													<option value="6">ALTO HORIZONTE/GO</option>
+													<option value="1">BRASÍLIA/DF</option>
+													<option value="5">CAMPINORTE/GO</option>
+													<option value="13">CÉU AZUL/GO</option>
+													<option value="4">CIDADE OCIDENTAL/GO</option>
+													<option value="12">MACEDO/GO</option>
+													<option value="8">MIMOSO/GO</option>
+													<option value="11">MONTE ALTO/GO</option>
+													<option value="10">NIQUELÂNDIA/GO</option>
+													<option value="15">NOVO GAMA/GO</option>
+													<option value="9">PADRE BERNARDO/GO</option>
+													<option value="14">PEDREGAL/GO</option>
+													<option value="7">URUAÇU/GO</option>
+													<option value="3">VALPARAISO/GO</option>
+											</select>
+				</div>
+				<div class="form-group">
+					<select class="form-control" id="destino">
+						<option value="">Selecione o destino...</option>
+													<option value="2">ÁGUAS LINDAS/GO</option>
+													<option value="6">ALTO HORIZONTE/GO</option>
+													<option value="1">BRASÍLIA/DF</option>
+													<option value="5">CAMPINORTE/GO</option>
+													<option value="13">CÉU AZUL/GO</option>
+													<option value="4">CIDADE OCIDENTAL/GO</option>
+													<option value="12">MACEDO/GO</option>
+													<option value="8">MIMOSO/GO</option>
+													<option value="11">MONTE ALTO/GO</option>
+													<option value="10">NIQUELÂNDIA/GO</option>
+													<option value="15">NOVO GAMA/GO</option>
+													<option value="9">PADRE BERNARDO/GO</option>
+													<option value="14">PEDREGAL/GO</option>
+													<option value="7">URUAÇU/GO</option>
+													<option value="3">VALPARAISO/GO</option>
+											</select>
+				</div>
+				<button type="button" class="btn btn-custom" id="pesquisar"><i class="fa fa-search"> Pesquisar</i></button>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<h2 class="row-title">ACESSOS FREQUENTES</h2>
+		
+		<div class="d-flex flex-wrap justify-content-lg-between">
+			<a href="horarios" class="box">
+				<i class="fas fa-bus"></i>
+				<span>Linhas e Horários</span>
+			</a>
+			<a href="vale-transporte" class="box">
+				<i class="fas fa-file"></i>
+				<span>Vale Transporte Papel</span>
+			</a>
+			<a href="cartao-expresso" class="box">
+				<i class="fas fa-credit-card"></i>
+				<span>Cartão Expresso/Usuário</span>
+			</a>
+			<a href="cartao-vale-transporte" class="box">
+				<i class="fas fa-address-card"></i>
+				<span>Cartão Vale Transporte</span>
+			</a>
+			<a href="contato" class="box">
+				<i class="fas fa-envelope"></i>
+				<span>Fale Conosco</span>
+			</a>
+		</div>
+	</div>
+
+	<div class="news-row">
+		<div class="container">
+			<h2 class="row-title">ÚLTIMAS NOTÍCIAS</h2>
+
+			<div class="row">
+								<div class="col-md-12 col-lg-4">
+					<div class="media news-item">
+						<div class="news-date">
+							<div class="day">30</div>
+							<div class="month">MAI</div>
+						</div>
+						<img class="mr-3" src="/uploads/noticias/6113e22b3754f.jpg" alt="">
+						<div class="media-body">
+							<a href="/noticias/gratuidades" class="text-dark">Gratuidades</a>
+							<br><a href="/noticias/gratuidades" class="readmore">Leia mais...</a>
+						</div>
+					</div>
+				</div>
+								<div class="col-md-12 col-lg-4">
+					<div class="media news-item">
+						<div class="news-date">
+							<div class="day">18</div>
+							<div class="month">AGO</div>
+						</div>
+						<img class="mr-3" src="/uploads/noticias/611d6dbd2d4b4.jpeg" alt="">
+						<div class="media-body">
+							<a href="/noticias/mais-26-nibus-do-entorno-vo-utilizar-o-brt" class="text-dark">Mais 26 ônibus do Entorno vão utilizar o BRT</a>
+							<br><a href="/noticias/mais-26-nibus-do-entorno-vo-utilizar-o-brt" class="readmore">Leia mais...</a>
+						</div>
+					</div>
+				</div>
+								<div class="col-md-12 col-lg-4">
+					<div class="media news-item">
+						<div class="news-date">
+							<div class="day">18</div>
+							<div class="month">AGO</div>
+						</div>
+						<img class="mr-3" src="/uploads/noticias/611d0ffd7c06a.jpeg" alt="">
+						<div class="media-body">
+							<a href="/noticias/novo-carto-expresso" class="text-dark">Novo Cartão Expresso</a>
+							<br><a href="/noticias/novo-carto-expresso" class="readmore">Leia mais...</a>
+						</div>
+					</div>
+				</div>
+							</div>
+		</div>
+	</div>
+
+<script>
+function run(){
+	$('#pesquisar').click(function(){
+		var origem = $('#origem').val();
+		var destino = $('#destino').val();
+
+		if(origem==''){
+			alert('Cidade de origem não selecionada.');
+			return;
+		}
+
+		if(destino==''){
+			alert('Cidade de destino não selecionada.');
+			return;
+		}
+
+		window.location = '/horarios-cidade/'+origem+'/'+destino;
+	});
+
+	$('#origem').change(function(){
+		var origem = $(this).val();
+		if(origem=='') return;
+
+		$.ajax({
+			type:'get', url:'/destinos/cidades/'+origem, dataType:'json',
+			beforeSend:function(){
+				$('#destino').html('<option>Carregando...</option>').prop('disabled', true);
+			},
+			success: function(data){
+				var html = '<option value="">Selecione o destino...</option>';
+				data.forEach(function(destino){
+					html += '<option value="'+destino.id+'">'+destino.cidade+'</option>';
+				});
+				$('#destino').html(html);
+				$('#destino').prop('disabled', false);
+			},
+			error: function(j){
+				console.log(j);
+			},
+		});
+	});
+}
+</script>
+	<footer>
+		<div class="container tesss">
+			<div class="row">
+				<div class="col-sm-6 col-md-3 d-none d-lg-block">
+					<h5 class="text-light">EMPRESA</h5>
+					<ul class="list-unstyled">
+						<li><a href="/empresa.html" class="text-footer">Sobre a empresa</a></li>
+						<li><a href="/trabalhe-conosco/inserir-curriculo" class="text-footer">Trabalhe conosco</a></li>
+						<li><a href="/noticias" class="text-footer">Notícias</a></li>
+						<li><a href="/informacoes" class="text-footer">Informações</a></li>
+					</ul>
+				</div>
+				<div class="col-sm-6 col-md-3 d-none d-lg-block">
+					<h5 class="text-light">SERVIÇOS</h5>
+					<ul class="list-unstyled">
+						<li><a href="/horarios" class="text-footer">Horários</a></li>
+						<li><a href="/tarifas" class="text-footer">Tarifas Semiurbano</a></li>
+						<li><a href="/tarifas-rodoviario" class="text-footer">Tarifas Rodoviário</a></li>
+						<li><a href="/busdoor" class="text-footer">Busdoor</a></li>
+						<li><a href="/encomendas" class="text-footer">Encomendas</a></li>
+					</ul>
+				</div>
+				<div class="col-sm-6 col-md-3 d-none d-lg-block">
+					<h5 class="text-light">AQUISIÇÃO</h5>
+					<ul class="list-unstyled">
+						<li><a href="/vale-transporte" class="text-footer">Vale Transporte</a></li>
+						<li><a href="/cartao-expresso" class="text-footer">Cartão Expresso</a></li>
+						<li><a href="/cartao-vale-transporte" class="text-footer">Cartão Vale Transporte</a></li>
+					</ul>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<h5 class="text-light">INTERNO</h5>
+					<ul class="list-unstyled">
+						<li><a href="http://webmail.utb.com.br" target="_blank" class="text-footer">Webmail</a></li>
+						<li><a href="https://intranet.utb.com.br" target="_blank" class="text-footer">Intranet</a></li>
+					</ul>
+				</div>
+
+				<div class="desenvolvimento d-none d-lg-block">
+					<a href="https://www.busdata.com.br" target="_blank">
+						<img src="/img/busdata.png" alt="Desenvolvido por Busdata">
+						<p>Busdata Sistemas</p>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer-bottom">
+			<div class="container">
+				© 2018 UTB - Sede Brasília: SIA Trecho 06 lote 160, Guará, Brasília-DF - Cep: 71205-060 | Tel: (61) 3233-2505 | SAC: 0800 647 0825 | Deficientes Auditivos: 0800 006 8006
+			</div>
+		</div>
+	</footer>
+
+<script src="/js/jquery.min.js"></script>
+<script src="/js/popper.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/sweetalert.min.js"></script>
+<script>
+$(document).ready(function(){
+	if (typeof run === "function") run();
+
+	});
+</script>
+</body>
+</html>

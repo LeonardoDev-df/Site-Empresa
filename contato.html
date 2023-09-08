@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Fale Conosco | UTB - União Transporte Brasília</title>
+	<meta name="description" content="Empresa de transporte de passageiros com sede em Brasília. Trabalhamos com linhas urbanas e rodoviárias, fretamentos, encomendas e busdoor." />
+	<meta name="keywords" content="utb, união transporte brasília, ônibus, linhas, horários, busdoor" />
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+	<link href="/favicon.ico" rel="shortcut icon" type="image/ico" />
+	<link rel="stylesheet" href="/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/css/fontawesome-all.min.css">
+	<link rel="stylesheet" href="/css/custom.css">
+</head>
+<body>
+
+	<nav class="navbar navbar-light navbar-expand-sm">
+		<div class="container">
+			<div style="display:flex;align-items:center">
+				<a class="navbar-brand" href="/">
+					<img class="d-none d-lg-block" src="/img/logo.png" alt="UTB">
+					<img class="d-lg-none" src="/img/logo-sm.png" alt="UTB">
+				</a>
+
+				<div>
+					
+					<a href="https://www.instagram.com/utbtransportes/" target="_blank" style="margin-left:10px;font-size:18px;color:rgb(224, 53, 102)"><i class="fab fa-instagram"></i></a>
+
+					<a href="https://api.whatsapp.com/send?phone=5561982370017&text=UTB" target="_blank" style="font-size:18px;color:#28c147"><i class="fab fa-whatsapp" style="margin-left:10px"></i></a>
+				</div>
+			</div>
+
+			<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#togglerNav" aria-controls="togglerNav" aria-expanded="false" aria-label="Menu"><span class="navbar-toggler-icon"></span></button>
+			<div class="collapse navbar-collapse" id="togglerNav">
+				<div class="navbar-nav ml-auto">
+					<div class="dropdown">
+						<a class="nav-item nav-link dropdown-toggle" data-toggle="dropdown" id="empresaDropdown" aria-haspopup="true" aria-expanded="false" href="#">Empresa</a>
+						<div class="dropdown-menu" aria-labelledby="empresaDropdown">
+							<a class="dropdown-item" href="/empresa">Sobre a empresa</a>
+							<a class="dropdown-item" href="/trabalhe-conosco/inserir-curriculo">Trabalhe conosco</a>
+							<a class="dropdown-item" href="/noticias">Notícias</a>
+							<a class="dropdown-item" href="/informacoes">Informações</a>
+						</div>
+					</div>
+
+					<div class="dropdown">
+						<a class="nav-item nav-link dropdown-toggle" data-toggle="dropdown" id="servicosDropdown" aria-haspopup="true" aria-expanded="false" href="#">Serviços</a>
+						<div class="dropdown-menu" aria-labelledby="servicosDropdown">
+							<a class="dropdown-item" href="/horarios">Horários</a>
+							<a class="dropdown-item" href="/tarifas">Tarifas Semiurbano</a>
+							<a class="dropdown-item" href="/tarifas-rodoviario">Tarifas Rodoviário</a>
+							<a class="dropdown-item" href="/busdoor">Busdoor</a>
+							<a class="dropdown-item" href="/encomendas">Encomendas</a>
+						</div>
+					</div>
+
+					<div class="dropdown">
+						<a class="nav-item nav-link dropdown-toggle" data-toggle="dropdown" id="servicosDropdown" aria-haspopup="true" aria-expanded="false" href="#">Aquisição</a>
+						<div class="dropdown-menu" aria-labelledby="servicosDropdown">
+							<a class="dropdown-item" href="/vale-transporte">Vale Transporte</a>
+							<a class="dropdown-item" href="/cartao-expresso">Cartão Expresso</a>
+							<a class="dropdown-item" href="/cartao-vale-transporte">Cartão Vale Transporte</a>
+						</div>
+					</div>
+
+					<a class="nav-item nav-link" href="./contato.html">Contato</a>
+				</div><!-- navbar -->
+			</div><!-- collapse -->
+		</div><!-- container -->
+	</nav>
+
+	<div class="page-header">
+	<div class="container">
+		<h1>Fale Conosco</h1>
+		<img class="d-none d-md-block" src="/img/contato.png" alt="Contato">
+	</div>
+</div>
+
+<div class="container conteudo">
+
+		<ul class="nav nav-pills submenu">
+		<li class="nav-item">
+			<a class="nav-link active" href="contato.html">SAC</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="/contato/outros-contatos">Outros Contatos</a>
+		</li>
+	</ul>
+	<h2>OCORRÊNCIA</h2>
+	<div class="row">
+		<div class="form-group col-md-4">
+			<label for="tipo">Tipo <span class="text-danger">*</span></label>
+			<select class="form-control" id="tipo">
+				<option value="semiurbano">Semiurbano</option>
+				<option value="rodoviario">Rodoviário</option>
+			</select>
+		</div>
+
+		<div class="form-group col-md-4">
+			<label for="linha">Linha <span class="text-danger">*</span></label>
+			<select class="form-control" id="linha">
+				<option value=""></option>
+								<option value="7">Águas Lindas/GO x Brasília/DF</option>
+								<option value="17">Campinorte/GO x Alto Horizonte/GO</option>
+								<option value="8">Céu Azul/GO x Brasília/DF</option>
+								<option value="10">Cidade Ocidental/GO x Brasília/DF</option>
+								<option value="13">Cidade Ocidental/GO x Gama/DF</option>
+								<option value="12">Cidade Ocidental/GO x Taguatinga/DF</option>
+								<option value="18">Niquelândia/GO x Macedo/GO</option>
+								<option value="16">Uruaçu/GO x Alto Horizonte/GO</option>
+								<option value="15">Valparaíso de Goiás/GO x Brasília/DF</option>
+								<option value="11">Valparaíso de Goiás/GO x Gama/DF</option>
+								<option value="14">Valparaíso de Goiás/GO x Taguatinga/DF</option>
+							</select>
+		</div>
+		<div class="form-group col-md-4">
+			<label for="veiculo">Veículo</label>
+			<input type="text" class="form-control" id="veiculo">
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="form-group col-md-4">
+			<label for="assunto">Assunto <span class="text-danger">*</span></label>
+			<select class="form-control" id="assunto">
+				<option value=""></option>
+								<option value="1">Sugestão</option>
+								<option value="2">Reclamação</option>
+								<option value="3">Elogio</option>
+								<option value="4">Solicitação de Linhas e Horários</option>
+								<option value="5">Dano de Bagagem</option>
+								<option value="6">Extravio de Bagagem</option>
+								<option value="7">Violação de Bagagem</option>
+								<option value="8">Pesquisa de Opinião</option>
+							</select>
+		</div>
+		<div class="form-group col-md-4">
+			<label for="data">Data Ocorrência <span class="text-danger desabilitavel">*</span></label>
+			<input type="text" class="form-control desabilitavel" id="data">
+		</div>
+
+		<div class="form-group col-md-4">
+			<label for="hora">Hora Ocorrência <span class="text-danger desabilitavel">*</span></label>
+			<input type="text" class="form-control desabilitavel" id="hora">
+		</div>
+	</div>
+
+	<div class="form-group">
+		<label for="descricao">Descrição</label> <span class="text-danger">*</span>
+		<textarea class="form-control" id="descricao" rows="6" maxlength="4000"></textarea>
+	</div>
+
+	<h2>DADOS PESSOAIS</h2>
+	<div class="row">
+		<div class="form-group col-md-4">
+			<label for="nome">Nome <span class="text-danger">*</span></label>
+			<input type="text" class="form-control" id="nome">
+		</div>
+
+		<div class="form-group col-md-4">
+			<label for="telefone">Telefone <span class="text-danger">*</span></label>
+			<input type="text" class="form-control" id="telefone">
+		</div>
+		<div class="form-group col-md-4">
+			<label for="email">E-mail</label>
+			<input type="text" class="form-control" id="email">
+		</div>
+	</div>
+
+	<div class="alert alert-danger" role="alert" id="erro-sac" style="display:none"></div>
+	<button type="button" class="btn btn-custom" id="enviar">Enviar Ocorrência</button>
+	<span class="text-muted small ml-2"><span class="text-danger">*</span> Campos obrigatórios.</span>
+</div>
+
+<script>
+function run(){
+	// Máscaras
+	$("#telefone").mask("(99) 9999-9999?9").focus(function() {
+		$(this).keyup(function() {
+		numeros = $(this).val().replace(/\D/g, '');
+		if(numeros.length == 11) { $(this).mask("(99) 99999-9999"); }
+		if(numeros.length == 10) { $(this).mask("(99) 9999-9999?9"); }
+		});
+	});
+
+	$('#data').mask('99/99/9999');
+	$('#hora').mask('99:99');
+	$('#cpf').mask('999.999.999-99');
+
+	$('#assunto').change(function(){
+		var v = this.value;
+		if (v=='1' || v=='4' || v=='8'){
+			$('input.desabilitavel').prop('disabled', true).val('');
+			$('span.desabilitavel').text('');
+		}else{
+			$('input.desabilitavel').prop('disabled', false).val('');
+			$('span.desabilitavel').text('*');
+		}
+	});
+
+	$('#enviar').click(function run(){
+
+		// telefone com apenas números
+		var telefone = $('#telefone').val()
+		telefone = telefone.replace(/\D/g,'');
+
+		var contato = {
+			tipo:$('#tipo').val(),
+			linha:$('#linha').val(),
+			assunto:$('#assunto').val(),
+			veiculo:$('#veiculo').val(),
+			descricao:$('#descricao').val(),
+			nome:$('#nome').val(),
+			telefone:telefone,
+			email:$('#email').val(),
+			dtocorrencia:$("#data").val()+' '+$("#hora").val()
+		};
+
+		$.ajax({
+			type:'post', data:{contato:JSON.stringify(contato)}, url:'sac', dataType:'json',
+			beforeSend:function(){
+				$('#enviar').attr('disabled', true);
+			},
+			success: function(j){
+
+				if(j.status=='OK'){
+					window.location = "";
+				}else{
+					$('#erro-sac').text(j.status);
+					$('#erro-sac').show();
+				}
+			},
+			error:function(){
+				$('#erro-sac').text('Erro inesperado.');
+				$('#erro-sac').show();
+			},
+			complete:function(){
+				$('#enviar').removeAttr('disabled');
+			}
+		});
+	});
+}
+</script>
+	<footer>
+		<div class="container tesss">
+			<div class="row">
+				<div class="col-sm-6 col-md-3 d-none d-lg-block">
+					<h5 class="text-light">EMPRESA</h5>
+					<ul class="list-unstyled">
+						<li><a href="/empresa" class="text-footer">Sobre a empresa</a></li>
+						<li><a href="/trabalhe-conosco/inserir-curriculo" class="text-footer">Trabalhe conosco</a></li>
+						<li><a href="/noticias" class="text-footer">Notícias</a></li>
+						<li><a href="/informacoes" class="text-footer">Informações</a></li>
+					</ul>
+				</div>
+				<div class="col-sm-6 col-md-3 d-none d-lg-block">
+					<h5 class="text-light">SERVIÇOS</h5>
+					<ul class="list-unstyled">
+						<li><a href="/horarios" class="text-footer">Horários</a></li>
+						<li><a href="/tarifas" class="text-footer">Tarifas Semiurbano</a></li>
+						<li><a href="/tarifas-rodoviario" class="text-footer">Tarifas Rodoviário</a></li>
+						<li><a href="/busdoor" class="text-footer">Busdoor</a></li>
+						<li><a href="/encomendas" class="text-footer">Encomendas</a></li>
+					</ul>
+				</div>
+				<div class="col-sm-6 col-md-3 d-none d-lg-block">
+					<h5 class="text-light">AQUISIÇÃO</h5>
+					<ul class="list-unstyled">
+						<li><a href="/vale-transporte" class="text-footer">Vale Transporte</a></li>
+						<li><a href="/cartao-expresso" class="text-footer">Cartão Expresso</a></li>
+						<li><a href="/cartao-vale-transporte" class="text-footer">Cartão Vale Transporte</a></li>
+					</ul>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<h5 class="text-light">INTERNO</h5>
+					<ul class="list-unstyled">
+						<li><a href="http://webmail.utb.com.br" target="_blank" class="text-footer">Webmail</a></li>
+						<li><a href="https://intranet.utb.com.br" target="_blank" class="text-footer">Intranet</a></li>
+					</ul>
+				</div>
+
+				<div class="desenvolvimento d-none d-lg-block">
+					<a href="https://www.busdata.com.br" target="_blank">
+						<img src="/img/busdata.png" alt="Desenvolvido por Busdata">
+						<p>Busdata Sistemas</p>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer-bottom">
+			<div class="container">
+				© 2018 UTB - Sede Brasília: SIA Trecho 06 lote 160, Guará, Brasília-DF - Cep: 71205-060 | Tel: (61) 3233-2505 | SAC: 0800 647 0825 | Deficientes Auditivos: 0800 006 8006
+			</div>
+		</div>
+	</footer>
+
+<script src="/js/jquery.min.js"></script>
+<script src="/js/popper.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/sweetalert.min.js"></script>
+<script src="/js/jquery.maskedinput.min.js"></script><script>
+$(document).ready(function(){
+	if (typeof run === "function") run();
+
+	});
+</script>
+</body>
+</html>

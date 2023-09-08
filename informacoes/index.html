@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Informações | UTB - União Transporte Brasília</title>
+	<meta name="description" content="Empresa de transporte de passageiros com sede em Brasília. Trabalhamos com linhas urbanas e rodoviárias, fretamentos, encomendas e busdoor." />
+	<meta name="keywords" content="utb, união transporte brasília, ônibus, linhas, horários, busdoor" />
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+	<link href="/favicon.ico" rel="shortcut icon" type="image/ico" />
+	<link rel="stylesheet" href="/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/css/fontawesome-all.min.css">
+	<link rel="stylesheet" href="/css/custom.css">
+</head>
+<body>
+
+	<nav class="navbar navbar-light navbar-expand-sm">
+		<div class="container">
+			<div style="display:flex;align-items:center">
+				<a class="navbar-brand" href="/">
+					<img class="d-none d-lg-block" src="/img/logo.png" alt="UTB">
+					<img class="d-lg-none" src="/img/logo-sm.png" alt="UTB">
+				</a>
+
+				<div>
+					
+					<a href="https://www.instagram.com/utbtransportes/" target="_blank" style="margin-left:10px;font-size:18px;color:rgb(224, 53, 102)"><i class="fab fa-instagram"></i></a>
+
+					<a href="https://api.whatsapp.com/send?phone=5561982370017&text=UTB" target="_blank" style="font-size:18px;color:#28c147"><i class="fab fa-whatsapp" style="margin-left:10px"></i></a>
+				</div>
+			</div>
+
+			<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#togglerNav" aria-controls="togglerNav" aria-expanded="false" aria-label="Menu"><span class="navbar-toggler-icon"></span></button>
+			<div class="collapse navbar-collapse" id="togglerNav">
+				<div class="navbar-nav ml-auto">
+					<div class="dropdown">
+						<a class="nav-item nav-link dropdown-toggle" data-toggle="dropdown" id="empresaDropdown" aria-haspopup="true" aria-expanded="false" href="#">Empresa</a>
+						<div class="dropdown-menu" aria-labelledby="empresaDropdown">
+							<a class="dropdown-item" href="/empresa">Sobre a empresa</a>
+							<a class="dropdown-item" href="/trabalhe-conosco/inserir-curriculo">Trabalhe conosco</a>
+							<a class="dropdown-item" href="/noticias">Notícias</a>
+							<a class="dropdown-item" href="/informacoes">Informações</a>
+						</div>
+					</div>
+
+					<div class="dropdown">
+						<a class="nav-item nav-link dropdown-toggle" data-toggle="dropdown" id="servicosDropdown" aria-haspopup="true" aria-expanded="false" href="#">Serviços</a>
+						<div class="dropdown-menu" aria-labelledby="servicosDropdown">
+							<a class="dropdown-item" href="/horarios">Horários</a>
+							<a class="dropdown-item" href="/tarifas">Tarifas Semiurbano</a>
+							<a class="dropdown-item" href="/tarifas-rodoviario">Tarifas Rodoviário</a>
+							<a class="dropdown-item" href="/busdoor">Busdoor</a>
+							<a class="dropdown-item" href="/encomendas">Encomendas</a>
+						</div>
+					</div>
+
+					<div class="dropdown">
+						<a class="nav-item nav-link dropdown-toggle" data-toggle="dropdown" id="servicosDropdown" aria-haspopup="true" aria-expanded="false" href="#">Aquisição</a>
+						<div class="dropdown-menu" aria-labelledby="servicosDropdown">
+							<a class="dropdown-item" href="/vale-transporte">Vale Transporte</a>
+							<a class="dropdown-item" href="/cartao-expresso">Cartão Expresso</a>
+							<a class="dropdown-item" href="/cartao-vale-transporte">Cartão Vale Transporte</a>
+						</div>
+					</div>
+
+					<a class="nav-item nav-link" href="/contato">Contato</a>
+				</div><!-- navbar -->
+			</div><!-- collapse -->
+		</div><!-- container -->
+	</nav>
+
+	<style>
+.card{
+	border-bottom:none;
+}
+.card:last-child{
+	border-bottom:1px solid rgba(0,0,0,.125);
+}
+.card-header{
+	padding:0;
+}
+.card button{
+	display:block;
+	height:100%;
+	width:100%;
+	padding:.75rem 1.25rem;
+	text-align:left;
+	color:#333;
+}
+.card button:hover{
+	text-decoration:none;
+}
+</style>
+<div class="page-header">
+	<div class="container">
+		<h1>Informações</h1>
+		<img class="d-none d-md-block" src="/img/informacoes.png" alt="Informações">
+	</div>
+</div>
+
+<div class="container conteudo">
+	<div id="accordion">
+		<div class="card">
+			<div class="card-header" id="headingOne">
+				<h5 class="mb-0">
+					<button class="btn btn-link" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">Embarque</button>
+				</h5>
+			</div>
+			<div id="collapse1" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+				<div class="card-body">
+					<p>Chegue ao terminal rodoviário 30 minutos antes do horário de partida do seu ônibus;</p>
+					<p>Segundo a legislação brasileira, é obrigatória a identificação do passageiro em viagens interestaduais. Desta forma, favor preencher o rodapé da passagem informando o seu nome completo e o documento de identificação – RG ou o bloco de Identificação de Passageiros correspondente; O embarque só poderá ser realizado mediante a apresentação do bilhete de passagem e do documento de identidade, por isso deixe-os à mão antes de dirigir-se à porta do ônibus;</p>
+					<p>O passageiro deverá manter em seu poder o bilhete de passagem para fins de fiscalização em viagem.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="card">
+			<div class="card-header" id="headingTwo">
+				<h5 class="mb-0">
+					<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">Não pode embarcar</button>
+				</h5>
+			</div>
+			<div id="collapse2" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+				<div class="card-body">
+					<p>Segundo o art. 30 do Decreto nº 2.521/98, o passageiro poderá ter recusado o embarque ou determinado o seu desembarque, quando:</p>
+					<ol>
+					<li>não se identificar quando exigido;</li>
+					<li>em estado de embriaguez; </li>
+					<li>portar arma, sem autorização da autoridade competente específica;</li>
+					<li>transportar ou pretender embarcar produtos considerados perigosos pela legislação específica;</li>
+					<li>transportar ou pretender embarcar consigo animais domésticos ou silvestres, sem o devido acondicionamento ou em desacordo com disposições legais ou regulamentares;</li>
+					<li>pretender embarcar objeto de dimensões e acondicionamento incompatíveis com o porta-embrulhos;</li>
+					<li>comprometer a segurança, o conforto ou a tranqüilidade dos demais passageiros;</li>
+					<li>fizer uso de aparelho sonoro, depois de advertido pela tripulação do veículo;</li>
+					<li>demonstrar incontinência no comportamento;</li>
+					<li>recusar-se ao pagamento da tarifa;</li>
+					<li>fizer uso de produtos fumígenos no interior do ônibus, em desacordo com a legislação pertinente.</li>
+					</ol>
+				</div>
+			</div>
+		</div>
+
+		<div class="card">
+			<div class="card-header" id="headingTwo">
+				<h5 class="mb-0">
+					<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+						Desembarque
+					</button>
+				</h5>
+			</div>
+			<div id="collapse3" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+				<div class="card-body">
+					<p>Ao desembarcar, lembre-se de verificar se não esqueceu algum pertence no interior do ônibus.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="card">
+			<div class="card-header" id="headingTwo">
+				<h5 class="mb-0">
+					<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+						Crianças e Adolescentes
+					</button>
+				</h5>
+			</div>
+			<div id="collapse4" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+				<div class="card-body">
+					<p><strong>O transporte de crianças e adolescentes requer cuidados especiais. Veja algumas recomendações e exigências legais:</strong></p>
+					<p>Segundo o artigo 83 do Estatuto da Criança e do Adolescente (ECA), adolescentes acima de 16 (dezesseis) anos não necessitam de autorização judicial, podem viajar sozinhas.</p>
+					<p>Ainda de acordo com o artigo, crianças e adolescentes menores de 16 anos, ao viajarem acompanhadas de pai, mãe, tio, tia, avô, avó ou irmão maior não precisam de autorização judicial, mas deverão portar certidão de nascimento original ou cópia autenticada, e o acompanhante deverá estar munido de identidade para comprovar o parentesco.</p>
+					<p>Viajando na companhia de pessoa maior ou parente por afinidade não necessitam de autorização judicial, mas deverão possuir autorização por escrito da mãe, responsável legal, ou pai da criança, com nome, endereço, número do documento de identidade e declaração de que autoriza a viajar na companhia de ....................., para o estado............... e retornar ao...............</p>
+					<p><strong>Junto com a autorização levar:</strong></p>
+					<ol>
+					<li>Cópia da identidade de quem autorizou a viagem (autenticada)</li>
+					<li>Identidade ou Certidão de Nascimento da criança</li>
+					</ol>
+					<p>Crianças menores de 12 anos, viajando desacompanhadas, necessitam de autorização judicial.</p>
+					<p><strong>Documentos necessários:</strong></p>
+					<ol>
+					<li>Xérox da Certidão de Nascimento da criança (autenticada)</li>
+					<li>Xérox do documento de identidade (autenticada)</li> 
+					<li>Duas fotos 3x4 da criança</li>
+					</ol>
+					<p>Lembramos que esta lei visa à segurança de seus filhos no convívio de sua família.</p>
+					<p>Não deixe que as crianças fiquem sozinhas ou sem identificação. Em caso de desencontro, procure o posto do Juizado de Menores presente no terminal rodoviário ou a administração.</p>
+					<ul>
+					<li>Crianças com até 5 anos de idade podem viajar gratuitamente, porém não têm garantia de poltrona;</li>
+					<li>Em viagens longas, leve um agasalho para a criança junto com as suas bagagens de mão, evitando a necessidade de abrir o bagageiro durante a viagem;</li>
+					<li>Nas paradas para lanche, acompanhe-as durante todo o tempo em que estiverem fora do ônibus;</li>
+					<li>Não permita que crianças fiquem em pé no corredor do ônibus ou mesmo junto às poltronas. Para sua segurança, mesmo que não tenham uma poltrona individual, elas devem permanecer sentadas, no colo de um adulto;</li>
+					<li>Nunca permita que a criança desembarque antes de você. É mais seguro um adulto desembarcar primeiro e conduzir a criança pelo braço.</li>
+					</ul>
+
+					<a href="http://legislacao.planalto.gov.br/legisla/legislacao.nsf/Viw_Identificacao/lei%208.069-1990?OpenDocument" target="_blank">LEI Nº 8.069, DE 13 DE JULHO DE 1990.</a>
+
+					<p>Art. 83.  Nenhuma criança ou adolescente menor de 16 (dezesseis) anos poderá viajar para fora da comarca onde reside desacompanhado dos pais ou dos responsáveis sem expressa autorização judicial. <a href="http://www.planalto.gov.br/ccivil_03/_Ato2019-2022/2019/Lei/L13812.htm#art14" target="_blank">(Redação dada pela Lei nº 13.812, de 2019)</a></p>
+
+					<p>§ 1º A autorização não será exigida quando:</p>
+
+					<p>a) tratar-se de comarca contígua à da residência da criança ou do adolescente menor de 16 (dezesseis) anos, se na mesma unidade da Federação, ou incluída na mesma região metropolitana; <a href="http://www.planalto.gov.br/ccivil_03/_Ato2019-2022/2019/Lei/L13812.htm#art14" target="_blank">(Redação dada pela Lei nº 13.812, de 2019)</a></p>
+
+					<p>b) a criança ou o adolescente menor de 16 (dezesseis) anos estiver acompanhado: <a href="http://www.planalto.gov.br/ccivil_03/_Ato2019-2022/2019/Lei/L13812.htm#art14" target="_blank">(Redação dada pela Lei nº 13.812, de 2019)</a></p>
+
+					<p style="padding-left:3em">1) de ascendente ou colateral maior, até o terceiro grau, comprovado documentalmente o parentesco;</p>
+
+					<p style="padding-left:3em">2) de pessoa maior, expressamente autorizada pelo pai, mãe ou responsável.</p>
+
+					<p>§ 2º A autoridade judiciária poderá, a pedido dos pais ou responsável, conceder autorização válida por dois anos.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="card">
+			<div class="card-header" id="headingTwo">
+				<h5 class="mb-0">
+					<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+						Idosos
+					</button>
+				</h5>
+			</div>
+			<div id="collapse5" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+				<div class="card-body">
+					<p>Idosos têm direito à gratuidade em linhas interestaduais e intermunicipais. A marcação da passagem deve ser feita em uma de nossas agências. Para utilizar esse benefício, algumas normas e observações devem ser respeitadas. Confira abaixo.</p>
+					<p><strong>Em linhas semiurbanas interestaduais (Lei nº 10.741/2003 Arts. 39 e 40):</strong></p>
+					<ul>
+					<li>duas vagas;</li>
+					<li>ter idade maior ou igual a 65 anos;</li>
+					<li>apresentar documento de identificação com foto;</li>
+					<li>exceto nos serviços seletivos e especiais.</li>
+					</ul>
+					<p><strong>Em linhas Interestaduais (Resolução nº 1.692/2006):</strong></p>
+					<ul>
+					<li>ter idade maior ou igual a 60 anos;</li>
+					<li>apresentar documento de identificação com foto;</li>
+					<li>apresentar comprovante de renda igual ou inferior a dois salários mínimos;</li>
+					<li>solicitar o bilhete com no mínimo 3 horas de antecedência do horário de embarque;</li>
+					<li>realizar o embarque com antecedência de no mínimo 30 minutos;</li>
+					<li>limitação de 2 (duas) poltronas gratuitas por ônibus de serviço Convencional;</li>
+					<li>após o preenchimento das vagas gratuitas, o idoso terá acesso a 50% de desconto no preço da tarifa em caso de compra.</li>
+					</ul>
+
+					<p><strong>Em linhas Intermunicipais do Estado de Goiás:</strong></p>
+					<ul>
+					<li>ter idade maior ou igual a 65 anos;</li>
+					<li>apresentar Passaporte do Idoso concedido pelo Governo de Goiás;</li>
+					<li>que receba até 3 (três) salários mínimos;</li>
+					<li>residentes no estado de Goiás;</li>
+					<li>em serviços rodoviários, o beneficiário deverá solicitar o bilhete com no mínimo 3 horas de antecedência em relação ao horário de embarque;</li>
+					<li>realizar o embarque com antecedência de no mínimo 30 minutos;</li>
+					<li>no caso de viagens rodoviárias, lembre-se que somos limitados a oferecer apenas 2 poltronas por veículo Convencional, sendo assim, programe sua viagem com antecedência e se dirija a um de nossos guichês para adquirir a sua passagem.</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="card">
+			<div class="card-header" id="headingTwo">
+				<h5 class="mb-0">
+					<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+						Deficiente físico
+					</button>
+				</h5>
+			</div>
+			<div id="collapse6" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+				<div class="card-body">
+					<p>Pessoas com deficiência física ou doenças crônicas possuem direito à gratuidade em linhas interestaduais e intermunicipais, desde que munidas de passe emitido pelos órgãos competentes, como Ministério dos Transportes (viagens interestaduais).</p>
+					<p>Os beneficiários deverão apresentar no serviço Convencional o Passe Livre e documento de identidade, já nos serviços Urbanos, somente o Passe Livre será necessário.</p>
+					<p>Atenção! O Passe Livre do Governo Federal não vale para o transporte urbano em ônibus <strong>executivo</strong>.</p>
+					<p>Em casos de linhas interestaduais em serviço rodoviário, é necessário também a comprovação de renda igual ou inferior a 1 salário mínimo. A marcação da passagem deve ser feita com até 3 horas de antecedência em relação ao horário de embarque (Lei nº 8.899/1994).</p>
+					<p>Lembre-se que são oferecidas apenas 2 (duas) poltronas por ônibus de serviço convencional rodoviário.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="card">
+			<div class="card-header" id="headingTwo">
+				<h5 class="mb-0">
+					<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+						Assento prioritário
+					</button>
+				</h5>
+			</div>
+			<div id="collapse7" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+				<div class="card-body">
+					<p>A legislação brasileira exige tratamento prioritário também às gestantes, lactantes e pessoas acompanhadas de crianças de colo.</p>
+					<p>Lei 10.048, de 08/11/2000, “Art. 3º As empresas públicas de transporte e as concessionárias de transporte coletivo reservarão assentos, devidamente identificados, aos idosos, gestantes, lactantes, pessoas portadoras de deficiência e pessoas acompanhadas por crianças de colo”.</p>
+					<p>Portanto, concedam educadamente seus assentos a essas pessoas que exigem um cuidado especial.</p>
+					<p>Caso contrário, o cobrador poderá solicitar a desocupação de seu assento.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="card">
+			<div class="card-header" id="headingTwo">
+				<h5 class="mb-0">
+					<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
+						Viagem com animais
+					</button>
+				</h5>
+			</div>
+			<div id="collapse8" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+				<div class="card-body">
+					<p>O transporte de animais em serviços rodoviários é uma situação muito especial. Observe as orientações abaixo:</p>
+					<ol>
+					<li>O animal deve estar em dia com a vacinação, conforme caderneta própria.</li>
+					<li>O proprietário do animal deve obter de um veterinário um laudo ou atestado de sanidade.</li>
+					<li>O animal não pode ser transportado de modo a, eventualmente, poder causar desconforto ou transtorno a outros usuários. Por isso, o animal, de pequeno porte e inofensivo, deverá viajar no colo do passageiro, dentro de embalagem padrão medindo 20 cm de largura, 25 cm de altura e 40 cm de comprimento. Se não estiver dentro deste padrão não poderá viajar.</li>
+					</ol>
+				</div>
+			</div>
+		</div>
+
+		<div class="card">
+			<div class="card-header" id="headingTwo">
+				<h5 class="mb-0">
+					<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
+						Bagagem
+					</button>
+				</h5>
+			</div>
+			<div id="collapse9" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+				<div class="card-body">
+					<p><strong>Siga corretamente as regras para o transporte de bagagens:</strong></p>
+					<p>As malas que irão no bagageiro devem receber identificação. Quem viaja deve assistir a colocação e retirada de sua bagagem no compartimento do ônibus e conferir o número do ticket de bagagem.</p>
+					<ul>
+						<li>Evite transtornos, colocando seu nome e telefone no interior da bagagem - assim será possível efetuar a devolução em caso de esquecimento ou extravio;</li>
+						<li>No desembarque, tenha em mãos os comprovantes de bagagem, agilizando a entrega;</li>
+						<li>O regulamento de transporte coletivo de pessoas assegura o transporte gratuito no bagageiro do ônibus de até 30 kg de bagagem por passageiro e volume de 1 m linear;</li>
+						<li>No porta embrulho, o peso total não deve exceder a 5 kg;</li>
+						<li>Caso o passageiro ultrapasse a franquia de 30 kg, a empresa pode cobrar pelo excesso;</li>
+						<li>É vedado o transporte de materiais considerados perigosos, como explosivos, armas de fogo, produtos corrosivos e produtos ilegais;</li>
+						<li>É também vedado o transporte de produtos que, por sua forma ou natureza, comprometam a segurança do veículo, de seus ocupantes ou de terceiros.</li>
+					</ul>
+					<p>Quando houver indícios que justifiquem verificação nos volumes a transportar, os prepostos da empresa poderão solicitar a abertura das bagagens pelos passageiros, sob pena de ser negado o embarque da referida bagagem.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="card">
+			<div class="card-header" id="headingTwo">
+				<h5 class="mb-0">
+					<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse10" aria-expanded="false" aria-controls="collapse10">
+						Bagagem proibida
+					</button>
+				</h5>
+			</div>
+			<div id="collapse10" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+				<div class="card-body">
+					<p>Para mais informações, veja na tabela a seguir o que pode e o que não pode ser transportado no ônibus:</p>
+					<ul>
+					<li><strong>EXPLOSIVOS</strong>, ex: munições, material pirotécnico e fogos de artifício;</li>
+					<li><strong>ARMAS BRANCAS</strong>, ex: facões, machados ou foices</li>
+					<li><strong>GASES</strong>, ex: butano, propano e cilindros de oxigênio</li>
+					<li><strong>ARMAS</strong>, ex: revólveres e bombas</li>
+					<li><strong>LÍQUIDO INFLAMÁVEL</strong>, ex: líquidos que podem pegar fogo, como álcool puro, gasolina ou isqueiros</li>
+					<li><strong>PONTIAGUDOS</strong>, ex: facas, estiletes, canivetes ou outros objetos cortantes e com ponta penetrante</li>
+					<li><strong>SÓLIDOS INFLAMÁVEIS</strong>, ex: que possam pegar fogo, como fósforos ou naftalina</li>
+					<li><strong>OXIDANTES E PERÓXIDOS</strong>, ex: água oxigenada, pó de cal ou fertilizante à base de nitrato de amônia</li>
+					<li><strong>TÓXICOS E INFECCIOSOS</strong>, ex: pesticidas para combater baratas, ratos ou outras pragas</li>
+					<li><strong>RADIOATIVOS</strong>, ex: substâncias que transmitam radioatividade, como césio 157 ou cobalto 60</li>
+					<li><strong>CORROSIVOS</strong>, ex: que podem causar danos e corroer, como mercúrio ou ácido sulfúrico</li>
+					<li><strong>MISCELÂNEOS OU DIVERSOS</strong>, ex: gelo seco, pedras poliméricas, bactérias ou vírus</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="card">
+			<div class="card-header" id="headingTwo">
+				<h5 class="mb-0">
+					<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse11" aria-expanded="false" aria-controls="collapse11">
+						Bagagens que exigem cuidado especial
+					</button>
+				</h5>
+			</div>
+			<div id="collapse11" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+				<div class="card-body">
+					<p>Podem ser transportados somente na bagagem despachada com os devidos cuidados de acondicionamento:</p>
+					<ul>
+					<li><strong>AMOSTRAS</strong>, ex: produtos que serão usados para análise</li>
+					<li><strong>ANIMAIS VIVOS</strong>, ex: cães e gatos (com exceção do cão-guia, cão-ouvinte ou cão-assistente)</li>
+					<li><strong>BEBIDAS</strong>, ex: vinhos, sucos e cervejas</li>
+					<li><strong>LÍQUIDOS</strong>, ex: perfumes e xampus</li>
+					<li><strong>BATERIAS</strong>, ex: de câmeras, filmadora e outros produtos elétricos</li>
+					<li><strong>AEROSSÓIS</strong>, ex: desodorantes para o corpo e para o ambiente</li>
+					<li><strong>PESCADOS</strong>, ex: peixes, caranguejos e lagostas</li>
+					<li><strong>MEDICAMENTOS</strong>, ex: comprimidos, xaropes e outros remédios que não precisem ser usados durante a viagem</li>
+					<li><strong>DESPORTIVOS</strong>, ex: bicicletas, pranchas de surfe, arco e flecha, patinete</li>
+					<li><strong>PERECÍVEIS</strong>, ex: alimentos e frutas</li>
+					<li><strong>MAGNÉTICOS</strong>, ex: imãs e outros objetos com magnetismo</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="card">
+			<div class="card-header" id="headingTwo">
+				<h5 class="mb-0">
+					<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse12" aria-expanded="false" aria-controls="collapse12">
+						Bagagem de mão
+					</button>
+				</h5>
+			</div>
+			<div id="collapse12" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+				<div class="card-body">
+					<p>As bagagens de mão são de inteira responsabilidade do passageiro. Os objetos transportados não são indenizáveis. Por isso, mantenha sempre consigo dinheiro, joias e outros objetos de valor. Nunca coloque esses objetos na mala que irá no bagageiro externo do veículo. Ao desembarcar, mesmo que seja nos pontos de paradas, é aconselhado ao passageiro que leve sua bagagem de mão, para evitar aborrecimentos.</p>
+					<p><strong>Portanto, SOMENTE pode ser transportado na bagagem de mão:</strong></p>
+					<ul>
+					<li><strong>NOTEBOOKS</strong>, ex: laptops, netbooks e tablets o CELULAR, ex: celulares, smartphones e outros aparelhos de comunicação de radiofreqüência</li>
+					<li><strong>FILMADORA</strong>, ex: portáteis, de mão ou HD</li>
+					<li><strong>MÁQUINA FOTOGRÁFICA</strong>, ex: digital ou analógica, compacta ou profissional</li>
+					<li><strong>DINHEIRO</strong>, ex: notas, cartões de crédito e talões de cheque</li>
+					<li><strong>PALM</strong>, ex: leitores eletrônicos, tablets ou smartphones</li>
+					<li><strong>JÓIAS</strong>, ex: ouro, pérolas e pedras preciosas</li>
+					</ul>
+					<p><strong>Pode - Na bagagem despachada:</strong></p>
+					<ul>
+					<li><strong>AMOSTRAS</strong>, ex: produtos que serão usados para análise
+					<li><strong>ANIMAIS VIVOS</strong>, ex: cães e gatos (com exceção do cão-guia, cão-ouvinte ou cão-assistente)
+					<li><strong>BEBIDAS</strong>, ex: vinhos, sucos e cervejas
+					<li><strong>LÍQUIDOS</strong>, ex: perfumes e xampus
+					<li><strong>BATERIAS</strong>, ex: de câmeras, filmadora e outros produtos elétricos
+					<li><strong>AEROSSÓIS</strong>, ex: desodorantes para o corpo e para o ambiente
+					<li><strong>PESCADOS</strong>, ex: peixes, caranguejos e lagostas
+					<li><strong>MEDICAMENTOS</strong>, ex: comprimidos, xaropes e outros remédios que não precisem ser usados durante a viagem
+					<li><strong>DESPORTIVOS</strong>, ex: bicicletas, pranchas de surfe, arco e flecha, patinete
+					<li><strong>PERECÍVEIS</strong>, ex: alimentos e frutas
+					<li><strong>MAGNÉTICOS</strong>, ex: imãs e outros objetos com magnetismo
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="card">
+			<div class="card-header" id="headingTwo">
+				<h5 class="mb-0">
+					<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse13" aria-expanded="false" aria-controls="collapse13">
+						Bagagem extraviada: como proceder?
+					</button>
+				</h5>
+			</div>
+			<div id="collapse13" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+				<div class="card-body">
+					<p>Em caso de dano ou extravio de bagagem, procure o funcionário responsável que se encontrar no local do desembarque. Preencha o formulário de reclamação de bagagem e apresente o ticket de bagagem, a passagem e um documento de identificação do passageiro. A cópia destes documentos será anexada ao formulário e encaminhada à empresa para que as devidas providências sejam tomadas. Para seu conforto, sugerimos que a bagagem receba uma identificação interna contendo seus dados pessoais, pois, em caso de extravio ou esquecimento, será mais fácil devolvê-la.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	<footer>
+		<div class="container tesss">
+			<div class="row">
+				<div class="col-sm-6 col-md-3 d-none d-lg-block">
+					<h5 class="text-light">EMPRESA</h5>
+					<ul class="list-unstyled">
+						<li><a href="/empresa" class="text-footer">Sobre a empresa</a></li>
+						<li><a href="/trabalhe-conosco/inserir-curriculo" class="text-footer">Trabalhe conosco</a></li>
+						<li><a href="/noticias" class="text-footer">Notícias</a></li>
+						<li><a href="/informacoes" class="text-footer">Informações</a></li>
+					</ul>
+				</div>
+				<div class="col-sm-6 col-md-3 d-none d-lg-block">
+					<h5 class="text-light">SERVIÇOS</h5>
+					<ul class="list-unstyled">
+						<li><a href="/horarios" class="text-footer">Horários</a></li>
+						<li><a href="/tarifas" class="text-footer">Tarifas Semiurbano</a></li>
+						<li><a href="/tarifas-rodoviario" class="text-footer">Tarifas Rodoviário</a></li>
+						<li><a href="/busdoor" class="text-footer">Busdoor</a></li>
+						<li><a href="/encomendas" class="text-footer">Encomendas</a></li>
+					</ul>
+				</div>
+				<div class="col-sm-6 col-md-3 d-none d-lg-block">
+					<h5 class="text-light">AQUISIÇÃO</h5>
+					<ul class="list-unstyled">
+						<li><a href="/vale-transporte" class="text-footer">Vale Transporte</a></li>
+						<li><a href="/cartao-expresso" class="text-footer">Cartão Expresso</a></li>
+						<li><a href="/cartao-vale-transporte" class="text-footer">Cartão Vale Transporte</a></li>
+					</ul>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<h5 class="text-light">INTERNO</h5>
+					<ul class="list-unstyled">
+						<li><a href="http://webmail.utb.com.br" target="_blank" class="text-footer">Webmail</a></li>
+						<li><a href="https://intranet.utb.com.br" target="_blank" class="text-footer">Intranet</a></li>
+					</ul>
+				</div>
+
+				<div class="desenvolvimento d-none d-lg-block">
+					<a href="https://www.busdata.com.br" target="_blank">
+						<img src="/img/busdata.png" alt="Desenvolvido por Busdata">
+						<p>Busdata Sistemas</p>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer-bottom">
+			<div class="container">
+				© 2018 UTB - Sede Brasília: SIA Trecho 06 lote 160, Guará, Brasília-DF - Cep: 71205-060 | Tel: (61) 3233-2505 | SAC: 0800 647 0825 | Deficientes Auditivos: 0800 006 8006
+			</div>
+		</div>
+	</footer>
+
+<script src="/js/jquery.min.js"></script>
+<script src="/js/popper.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/sweetalert.min.js"></script>
+<script>
+$(document).ready(function(){
+	if (typeof run === "function") run();
+
+	});
+</script>
+</body>
+</html>
