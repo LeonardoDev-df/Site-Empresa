@@ -99,13 +99,33 @@
 	.horarios-container {
 		justify-content:center;
 	}
+	.horarios-panel{
+	padding:20px;
+	border-radius:8px;
+	background: rgba(255,255,255,0.5);
+	width:340px;
+	margin-left: 24px;
+	margin-top: -10%;
+}
+.horarios-panel h2{
+	font-size:22px;
+	margin-bottom:15px;
+	color:#444;
+}
+.horarios-container{
+	display:flex;height:100%;align-items:center;
+}
+.header-image{
+      color:#fff;
+      background: url(/img/pi.png) no-repeat;
+      background-size:cover;
+      height:296px;
+  }
 }
 </style>
 
 	<div class="header-image">
 		<div class="container horarios-container">
-
-
 			<div class="horarios-panel">
 				<h2>Consulta de Horários</h2>
 				<div class="form-group">
@@ -311,14 +331,14 @@ function run(){
 
 				<div class="desenvolvimento d-none d-lg-block">
 					<a href="https://www.busdata.com.br" target="_blank">
-						<img src="/img/busdata.png" alt="Desenvolvido por Busdata">
-						<p>Busdata Sistemas</p>
+						<img src="/img/busdata.png" alt="Desenvolvido por ">
+					
 					</a>
 				</div>
 			</div>
 		</div>
 
-		<div class="footer-bottom">
+		<div class="footer-bottom" style="display: flex;  text-align: center;">
 			<div class="container">
 				© 2023 Viação Pioneira LTDA
 		</div>
