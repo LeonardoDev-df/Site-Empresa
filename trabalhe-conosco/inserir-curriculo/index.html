@@ -31,9 +31,9 @@
 
 				<div>
 					
-					<a href="https://www.instagram.com/utbtransportes/" target="_blank" style="margin-left:10px;font-size:18px;color:rgb(224, 53, 102)"><i class="fab fa-instagram"></i></a>
+					<a href="https://www.instagram.com" target="_blank" style="margin-left:10px;font-size:18px;color:rgb(224, 53, 102)"><i class="fab fa-instagram"></i></a>
 
-					<a href="https://api.whatsapp.com/send?phone=5561982370017&text=UTB" target="_blank" style="font-size:18px;color:#28c147"><i class="fab fa-whatsapp" style="margin-left:10px"></i></a>
+					<a href="https://api.whatsapp.com" target="_blank" style="font-size:18px;color:#28c147"><i class="fab fa-whatsapp" style="margin-left:10px"></i></a>
 				</div>
 			</div>
 
@@ -54,18 +54,13 @@
 						<a class="nav-item nav-link dropdown-toggle" data-toggle="dropdown" id="servicosDropdown" aria-haspopup="true" aria-expanded="false" href="#">Serviços</a>
 						<div class="dropdown-menu" aria-labelledby="servicosDropdown">
 							<a class="dropdown-item" href="/horarios">Horários</a>
-							<a class="dropdown-item" href="/tarifas">Tarifas Semiurbano</a>
-							<a class="dropdown-item" href="/tarifas-rodoviario">Tarifas Rodoviário</a>
 							<a class="dropdown-item" href="/busdoor">Busdoor</a>
-							<a class="dropdown-item" href="/encomendas">Encomendas</a>
 						</div>
 					</div>
 
 					<div class="dropdown">
 						<a class="nav-item nav-link dropdown-toggle" data-toggle="dropdown" id="servicosDropdown" aria-haspopup="true" aria-expanded="false" href="#">Aquisição</a>
 						<div class="dropdown-menu" aria-labelledby="servicosDropdown">
-							<a class="dropdown-item" href="/vale-transporte">Vale Transporte</a>
-							<a class="dropdown-item" href="/cartao-expresso">Cartão Expresso</a>
 							<a class="dropdown-item" href="/cartao-vale-transporte">Cartão Vale Transporte</a>
 						</div>
 					</div>
@@ -192,15 +187,8 @@
 			<div class="form-group">
 				<label for="local">Local de Trabalho <span class="text-danger">*</span></label>
 				<select class="form-control" id="local">
-					<option value=""></option>
-										<option value="4">ÁGUAS LINDAS/GO</option>
-										<option value="7">ALTO HORIZONTE/GO</option>
+					<option value=""></option>										
 										<option value="1">BRASÍLIA/DF</option>
-										<option value="3">CIDADE OCIDENTAL/GO</option>
-										<option value="8">MONTE ALTO/GO</option>
-										<option value="6">NIQUELÂNDIA/GO</option>
-										<option value="5">PADRE BERNARDO/GO</option>
-										<option value="2">VALPARAÍSO/GO</option>
 									</select>
 			</div>
 			<div class="form-group">
@@ -306,34 +294,7 @@
 		<div class="form-group col-md-4">
 			<label for="uf">UF <span class="text-danger">*</span></label>
 			<select class="form-control" id="uf">
-				<option value=""></option>
-				<option value="AC">AC</option>
-				<option value="AL">AL</option>
-				<option value="AM">AM</option>
-				<option value="AP">AP</option>
-				<option value="BA">BA</option>
-				<option value="CE">CE</option>
 				<option value="DF">DF</option>
-				<option value="ES">ES</option>
-				<option value="GO">GO</option>
-				<option value="MA">MA</option>
-				<option value="MG">MG</option>
-				<option value="MS">MS</option>
-				<option value="MT">MT</option>
-				<option value="PA">PA</option>
-				<option value="PB">PB</option>
-				<option value="PE">PE</option>
-				<option value="PI">PI</option>
-				<option value="PR">PR</option>
-				<option value="RJ">RJ</option>
-				<option value="RN">RN</option>
-				<option value="RO">RO</option>
-				<option value="RR">RR</option>
-				<option value="RS">RS</option>
-				<option value="SC">SC</option>
-				<option value="SE">SE</option>
-				<option value="SP">SP</option>
-				<option value="TO">TO</option>
 			</select>
 		</div>
 	</div>
@@ -502,7 +463,7 @@ function run(){
 			uf:$('#uf').val(),
 			experiencia:$('#experiencia').val(),
 			filename:filename,
-			baseurl:'https://www.utb.com.br/temp/',
+			baseurl:'',
 			empregos:empregos
 		};
 
@@ -563,8 +524,8 @@ function run(){
 				<div class="col-sm-6 col-md-3">
 					<h5 class="text-light">INTERNO</h5>
 					<ul class="list-unstyled">
-						<li><a href="http://webmail.utb.com.br" target="_blank" class="text-footer">Webmail</a></li>
-						<li><a href="https://intranet.utb.com.br" target="_blank" class="text-footer">Intranet</a></li>
+						<li><a href="" target="_blank" class="text-footer">Webmail</a></li>
+						<li><a href="" target="_blank" class="text-footer">Intranet</a></li>
 					</ul>
 				</div>
 
